@@ -1,0 +1,403 @@
+@import url(https://fonts.googleapis.com/css?family=Lobster+Two);
+@import url(https://fonts.googleapis.com/css?family=Questrial);
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro);
+
+	/***************Base content specifications************************/
+#background{
+	background: url(background4.png) no-repeat center center fixed;
+ -webkit-background-size: contain;
+ -moz-background-size: contain;
+ -o-background-size: contain;
+ background-size: cover;
+}
+
+#logo{
+	position: fixed;
+	bottom:0;
+	left: 0;
+}
+
+#home{
+	font-family: 'Questrial', sans-serif;
+	font-size: 170%;
+	text-align: center;
+	display: none;
+}
+
+#logo:hover #home{
+	display: block;
+}
+
+	/*********************Cloud Banner******************************/
+
+#container{
+	width: @media (min-width: 1536px);
+	height: 436px;
+	overflow: hidden;
+	margin:50px auto;
+}
+
+	/*********************Main content box*****************************/
+
+#contentRectangle{
+	width: 75%;
+	height: 50vh;
+	border-radius: 50px;
+	background-color: white;
+	opacity: 0.8;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -200px;
+	margin-bottom: auto;
+	position: relative;
+	z-index: 1;
+}
+
+#introBox{
+	position: absolute;
+	max-width: 75%;
+	max-height: 60%;
+	overflow-x: hidden;
+	overflow-y: auto;
+	right: 14%;
+	z-index: 2;
+	top: 232px;
+	left: 14%;
+
+}
+
+#title{
+		font: 100px'Lobster Two';
+		text-align: center;
+		text-shadow: 4.5px 0px #94abaa;
+		z-index: 3;
+}
+
+#intro{
+	font: 20px 'Open Sans', sans-serif;
+	text-align: justify;
+	color: black;
+	line-height: 30px;
+}
+
+	/******************Social Media content*****************************/
+
+#socialMedia{
+	background-color: white;
+	width: 172px;
+	height: 60px;
+	opacity: 0.8;
+	border-radius: 25px;
+	position: fixed;
+	right: 28%;
+	bottom: 1.5%;
+	padding: 5px;
+
+}
+
+#centre{
+	font: 20px 'Open Sans', sans-serif;
+	text-align: center;
+	line-height: 30px;
+}
+
+
+	/******************Contact Me content*****************************/
+
+#formGroup{
+	margin-top: 15px;
+	margin-left: 25%;
+
+}
+
+#inputBoxes{
+	font: 15px'Questrial';
+	color: black;
+	line-height: 30px;
+	display: inline-block;
+	width: 300px;
+	height: 30px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	color:#3a3a3a;
+	border:1px solid 	#A9A9A9;
+}
+
+#messageContent{
+	width: 605px;
+	height: 280px;
+	font: 15px'Questrial';
+	color: black;
+	line-height: 30px;
+	display: inline-block;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	color:#3a3a3a;
+	border:1px solid 	#A9A9A9;
+}
+
+#submitButton{
+	position: fixed;
+	left: 45%;
+	top: 80%;
+	font: 20px'Questrial';
+	color: black;
+	line-height: 30px;
+	cursor:pointer;
+	width:127px;
+  height:38px;
+  border:none;
+  cursor:pointer;
+	border-radius: 5px;
+}
+
+#submitButton:hover {
+	    opacity:.9;
+	}
+
+#contactMeWhiteSquare{
+	position: absolute;
+	max-width: 75%;
+	max-height: 60%;
+	overflow-x: hidden;
+	overflow-y: auto;
+	right: 14%;
+	z-index: 2;
+	top: 232px;
+	left: 14%;
+	display: none;
+
+}
+
+#errContact{
+	left: 48%;
+	position: fixed;
+}
+
+	/************************Navigation Bar*****************************/
+
+.navBar{
+	background-color: white;
+	width: 60px;
+	height: 60px;
+	opacity: 0.8;
+	border-radius: 25px;
+	position: fixed;
+	left: 12%;
+	bottom: 1.5%;
+	padding: 5px;
+	transition:  width 400ms;
+  -moz-transition:width 400ms ;
+  -ms-transition: width 400ms;
+  -o-transition: width 400ms ;
+  -webkit-transition: width 400ms;
+
+}
+
+.navBar:hover{
+	width: 215px;
+	display:inline-block;
+	transition: width 300ms ;
+  -moz-transition: width 300ms;
+  -ms-transition: width 300ms;
+  -o-transition: width 300ms;
+  -webkit-transition: width 300ms;
+}
+
+.buttons{
+	list-style: none;
+	margin: 0;
+	padding-left: 0;
+	float: right;
+	box-sizing: content-box;
+}
+
+.hiddenButtons{
+	list-style: none;
+	margin: 0;
+	padding-left: 0;
+	float: right;
+	box-sizing: content-box;
+	display: none;
+}
+
+.navBar:hover .hiddenButtons{
+	display: block;
+	list-style: none;
+	margin: 0;
+	padding-left: 0;
+	float: right;
+	box-sizing: content-box;
+}
+
+	/************************Navigation Bar*****************************/
+
+	#aboutMe{
+		position: absolute;
+		max-width: 75%;
+		max-height: 60%;
+		overflow-x: hidden;
+		overflow-y: auto;
+		right: 14%;
+		z-index: 2;
+		top: 232px;
+		left: 14%;
+		display: none;
+	}
+
+/************************CV Page*****************************/
+
+#CV{
+		position: absolute;
+		max-width: 75%;
+		max-height: 60%;
+		overflow-x: hidden;
+		overflow-y: auto;
+		right: 14%;
+		z-index: 2;
+		top: 232px;
+		left: 14%;
+		display: none;
+	}
+	#tabs{
+		position: absolute;
+		max-width: 75%;
+		min-height: 50%;
+		overflow-x: hidden;
+		overflow-y: auto;
+		right: 14%;
+		z-index: 2;
+		top: 350px;
+		left: 14%;
+		display:none;
+	}
+
+.tab-content{
+	position: absolute;
+	z-index: 2;
+	top: 70px;
+
+}
+
+.progressLimit{
+	position: relative;
+	width: 600px;
+	height: 25px;
+	background: #f5f1ec;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+	padding: 10px;
+
+}
+
+.progressBar{
+	position: absolute;
+	background: #cbe695;
+	width: 10px;
+	height: 25px;
+	-moz-border-radius: 25px;
+	-webkit-border-radius: 25px;
+	border-radius: 25px;
+	padding: 10px;
+	top: 1px;
+	left: 1px;
+	-webkit- transition: width 2s;
+	transition: width 2s;
+
+}
+
+.progressBar:hover{
+	width: 300px;
+}
+
+
+
+
+
+
+/************************Gallery*****************************/
+
+#gallery{
+		position: absolute;
+		max-width: 75%;
+		max-height: 60%;
+		overflow-x: hidden;
+		overflow-y: auto;
+		right: 14%;
+		z-index: 2;
+		top: 232px;
+		left: 14%;
+		display: none;
+		}
+
+
+
+/*Banner animation related code (https://designshack.net/articles/css/infinitephotobanner/)*/
+
+.cloudbanner {
+ height: 436px;
+ width: 3350px;
+ margin-bottom: 80px;
+}
+
+.first {
+	-webkit-animation: bannermove 35s linear infinite;
+	-moz-animation: bannermove 35s linear infinite;
+	-ms-animation: bannermove 35s linear infinite;
+	-o-animation: bannermove 35s linear infinite;
+	animation: bannermove 35s linear infinite;
+}
+
+@keyframes "bannermove" {
+ 0% {
+    margin-left: 0px;
+ }
+ 100% {
+    margin-left: -1749px;
+ }
+
+}
+
+@-moz-keyframes bannermove {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -1749px;
+ }
+
+}
+
+@-webkit-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -1749px;
+ }
+
+}
+
+@-ms-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -1749px;
+ }
+
+}
+
+@-o-keyframes "bannermove" {
+ 0% {
+   margin-left: 0px;
+ }
+ 100% {
+   margin-left: -1749px;
+ }
+
+}

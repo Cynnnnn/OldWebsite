@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Cynthia's Website</title>
+	<link rel="stylesheet" href="stylesheet.css">
+	<link rel='shortcut icon' href='favicon.ico' type='image/x-icon'/ >
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="js.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<!-- Background------------------------------------------>
+<body id="background">
+	<div id="logo">
+		<span id="home">Home</span>
+		<a href="index.html">
+		<img src="Logov2.png" alt="Home">
+	</a>
+	</div>
+
+<!-- Cloud Banner ---------------------------------------->
+	<div id="container">
+		    <div class="cloudbanner">
+					<img class="first" src="Cloud6.png">
+					<img src="Cloud8.png" alt="clouds">
+					<img src="Cloud9.png" alt="clouds">
+					<img src="Cloud6.png" alt="clouds">
+					<img src="Cloud7.png" alt="clouds">
+					<img src="Cloud8.png" alt="clouds">
+		    </div>
+		</div>
+<!-- Site Intro------------------------------------------->
+	<div id="contentRectangle">
+	</div>
+
+	<div id="introBox" >
+			<p id="title">Welcome, Stranger</p>
+			<p id="centre">Thanks for the visit!</p><Br>
+				<!-- <p id="intro">I am Cynthia, a recent graduate from the University of Auckland majoring in Computer Science/Information Systems.<br><br>
+					Currently, I'm in a strange limbo where I still feel like a student and not quite ready for this new working life. It seems like
+					everyone is probably winging it so here is my attempt. This website is an accumulation of my efforts in hopes to stand out from others.
+					Everything you see here in terms of code/graphics have been created by me from scratch <i>(with help from Google)</i> and I really hope you like it!
+					<br><br><i>On a side note: You'll probably notice some mistakes here and there... I'm still figuring those out...</i> -->
+					<br><br><p id="title">-Cyn</p>
+			</menu></p>
+		</div>
+<!-- Contact me-------------------------------------------->
+	<div id="contactMeWhiteSquare">
+		<p id="title">Contact Me</p>
+		<p id="centre">Fill in the form below if you have any feedback, advice, suggestions or opportunities.</p>
+
+		<form id="formGroup" action="" method="POST">
+			<input id="inputBoxes" name="name" onblur="checkNamefield()" placeholder="What do your friends call you?"  >
+			<input id="inputBoxes" name="email" onblur="checkContactfield()" placeholder="How can I contact you?" >
+			<br><span id="errName"></span><span id="errContact"></span><br>
+			<textarea id="messageContent" name="message" onblur="checkMessagefield()" placeholder="Whats on your mind?" rows="0" cols="81" ></textarea>
+			<br><span id="errMessage"></span>
+			<input id="submitButton" name="submit" type="submit" value="Send"	>
+	</form>
+	</div>
+<!-- Social Media links----------------------------------->
+	<div id="socialMedia" >
+			<a href="https://nz.linkedin.com/in/cynthia-shum" ><img src="linkedIn3.png" alt="LinkedIn page" title="LinkedIn"></a>
+			<a href="https://github.com/Cynnnnn" ><img src="gitHub3.png" alt="GitHub Page" title="GitHub" ></a>
+			<a href="#"><img src="facebook3.png" alt="Facebook page" title="Facebook"></a>
+
+		</div>
+<!-- Navigation Bar--------------------------------------->
+	<div class="navBar">
+			<ul class="buttons">
+				<li><a href="#" onClick="hideshowCV('CV','tabs','introBox','contactMeWhiteSquare','aboutMe','gallery');" data-toggle="tooltip" title="CV"><img src="cv2.png" alt="CV"></a></li>
+			</ul>
+			<ul class="hiddenButtons">
+				<li><a href="#" onClick="hideandshow('aboutMe','introBox','contactMeWhiteSquare','CV','gallery','tabs');" data-toggle="tooltip"  title="About Me"><img src="aboutme2.png" alt="About Me"></li>
+			</ul>
+			<ul class="hiddenButtons">
+				<li><a href="#" onClick="hideandshow('gallery','tabs', 'introBox','contactMeWhiteSquare','CV','aboutMe');" data-toggle="tooltip" title="Gallery"><img src="gallery.png" alt="Gallery"></li>
+			</ul>
+		</ul>
+		<ul class="hiddenButtons">
+			<li><a href="#" onClick="hideandshow('contactMeWhiteSquare','tabs', 'introBox','aboutMe','CV', 'gallery');" data-toggle="tooltip"  title="Contact Me" ><img src="contact2.png" alt="Contact Me"></a></li>
+
+		</ul>
+	</div>
+	<script>
+			$(document).ready(function(){
+				$('[data-toggle="tooltip"]').tooltip();
+				});
+		</script>
+	<!-- About me--------------------------------------->
+	<div id="aboutMe">
+		<p id="title">About Me</p>
+		<!-- <p id="centre">As you know, my name is Cynthia and this is my website.<br><br><p>
+			<p id="intro">I don't know if you can tell from my gallery but I think I'm an arts student deep <i>deep</i> down. Since I found out I wasn't talented enough to earn a living from it though, here I am
+			using programming as an alternative creative outlet. My goal now is to be somewhere, surrounded by people I don't mind and doing a job that I won't hate waking up to. I don't know how that pan out, but
+			I'm trying to work that out now. The ideal of course is to be fostering animals but that's probably something I'll be doing when I retire.
+				<br><br>I'm curious by nature and pick up on concepts fairly fast - my interest these days are more toward the UX and UI side of things (because of what I do at Skinny Mobile) - but have some experience in
+				most programming languages. All my previous work experiences have required soft skills so I would say that those are my core strengths. </p> -->
+
+
+				<p id="centre"><br><i>"Something something she's great! &#9733;&#9733;&#9733;&#9733;&#9734;"</i><br><i>-Anonymous</i></p?
+		</p>
+	</div>
+
+	<!-- CV-------------------------------------->
+	<div id="CV">
+		<p id="title">My Skills and Experience</p>
+	</div>
+	<div id="tabs">
+		<ul class="nav nav-tabs">
+			<li class="active" id="intro"><a data-toggle="tab" href="#interpersonal" >Interpersonal</a></li>
+			<li id="intro"><a  data-toggle="tab" href="#technical">Technical</a></li>
+		</ul>
+		<div class="tab-content">
+			<div id= "interpersonal" class = "tab-pane fade in active">
+				<!-- <table border="1">
+					<tr><th id='intro'>Label</th><th></th><th id='intro'>Label 2</th></tr>
+					<tr><td><div class="progressLimit"><div class="progressBar" id="first"></div></div></td><td><br></td><td><div class="progressLimit"><div class="progressBar" id="second"></div></div></td></tr>
+				</table> -->
+			</div>
+			<div id="technical" class= "tab-pane fade">
+			</div>
+		</div>
+</div>
+
+
+	<!-- Gallery-------------------------------------->
+	<div id="gallery">
+		<p id="title">Gallery</p>
+		</p>
+
+	</div>
+</body>
+
+</html>
